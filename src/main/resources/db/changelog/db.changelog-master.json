@@ -1,0 +1,14 @@
+{
+  "databaseChangeLog": [
+    {
+      "include": {
+        "file": "db/changelog/changes/db.changelog-practitioner.json"
+      }
+    },
+    {
+      "include": {
+        "file": "db/changelog/changes/db.changelog-practitioner_relationship.json"
+      }
+    }
+  ]
+}

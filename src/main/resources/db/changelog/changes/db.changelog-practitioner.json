@@ -1,0 +1,541 @@
+{
+  "databaseChangeLog": [
+    {
+      "changeSet": {
+        "id": 1,
+        "author": "danyu.wan",
+        "changes": [
+          {
+            "createTable": {
+              "tableName": "practitioner",
+              "columns": [
+                {
+                  "column": {
+                    "name": "id",
+                    "type": "BIGINT",
+                    "autoIncrement": true,
+                    "constraints": {
+                      "primaryKey": true,
+                      "nullable": false
+                    }
+                  }
+                },
+                {
+                  "column": {
+                    "name": "first_name",
+                    "type": "VARCHAR(100)",
+                    "constraints": {
+                      "nullable": false
+                    }
+                  }
+                },
+                {
+                  "column": {
+                    "name": "last_name",
+                    "type": "VARCHAR(100)",
+                    "constraints": {
+                      "nullable": false
+                    }
+                  }
+                },
+                {
+                  "column": {
+                    "name": "style",
+                    "type": "VARCHAR(100)"
+                  }
+                },
+                {
+                  "column": {
+                    "name": "year_of_birth",
+                    "type": "SMALLINT"
+                  }
+                },
+                {
+                  "column": {
+                    "name": "year_of_death",
+                    "type": "SMALLINT"
+                  }
+                },
+                {
+                  "column": {
+                    "name": "biography",
+                    "type": "VARCHAR(5000)"
+                  }
+                },
+                {
+                  "column": {
+                    "name": "image",
+                    "type": "VARCHAR(500)"
+                  }
+                },
+                {
+                  "column": {
+                    "name": "region",
+                    "type": "VARCHAR(100)"
+                  }
+                }
+              ]
+            }
+          }
+        ]
+      }
+    },
+    {
+      "changeSet": {
+        "id": 2,
+        "author": "danyu.wan",
+        "changes": [
+          {
+            "insert": {
+              "tableName": "practitioner",
+              "columns": [
+                {
+                  "column": {
+                    "name": "first_name",
+                    "value": "Ankō"
+                  }
+                },
+                {
+                  "column": {
+                    "name": "last_name",
+                    "value": "Asato"
+                  }
+                },
+                {
+                  "column": {
+                    "name": "style",
+                    "value": "Karatedo (Naha Te)"
+                  }
+                },
+                {
+                  "column": {
+                    "name": "year_of_birth",
+                    "value": 1827
+                  }
+                },
+                {
+                  "column": {
+                    "name": "year_of_death",
+                    "value": 1906
+                  }
+                },
+                {
+                  "column": {
+                    "name": "region",
+                    "value": "Okinawa"
+                  }
+                }
+              ]
+            }
+          },
+          {
+            "insert": {
+              "tableName": "practitioner",
+              "columns": [
+                {
+                  "column": {
+                    "name": "first_name",
+                    "value": "Chōtoku"
+                  }
+                },
+                {
+                  "column": {
+                    "name": "last_name",
+                    "value": "Kyan"
+                  }
+                },
+                {
+                  "column": {
+                    "name": "style",
+                    "value": "Shōrin-ryū, Tomari-te"
+                  }
+                },
+                {
+                  "column": {
+                    "name": "year_of_birth",
+                    "value": 1870
+                  }
+                },
+                {
+                  "column": {
+                    "name": "year_of_death",
+                    "value": 1945
+                  }
+                },
+                {
+                  "column": {
+                    "name": "region",
+                    "value": "Okinawa"
+                  }
+                }
+              ]
+            }
+          },
+          {
+            "insert": {
+              "tableName": "practitioner",
+              "columns": [
+                {
+                  "column": {
+                    "name": "first_name",
+                    "value": "Ryōsei"
+                  }
+                },
+                {
+                  "column": {
+                    "name": "last_name",
+                    "value": "Kuwae"
+                  }
+                },
+                {
+                  "column": {
+                    "name": "style",
+                    "value": "Okinawan Karatedo"
+                  }
+                },
+                {
+                  "column": {
+                    "name": "region",
+                    "value": "Okinawa"
+                  }
+                }
+              ]
+            }
+          },
+          {
+            "insert": {
+              "tableName": "practitioner",
+              "columns": [
+                {
+                  "column": {
+                    "name": "first_name",
+                    "value": "Kanryō"
+                  }
+                },
+                {
+                  "column": {
+                    "name": "last_name",
+                    "value": "Higaonna"
+                  }
+                },
+                {
+                  "column": {
+                    "name": "style",
+                    "value": "Karatedo (Naha Te)"
+                  }
+                },
+                {
+                  "column": {
+                    "name": "year_of_birth",
+                    "value": 1853
+                  }
+                },
+                {
+                  "column": {
+                    "name": "year_of_death",
+                    "value": 1915
+                  }
+                },
+                {
+                  "column": {
+                    "name": "region",
+                    "value": "Okinawa"
+                  }
+                }
+              ]
+            }
+          },
+          {
+            "insert": {
+              "tableName": "practitioner",
+              "columns": [
+                {
+                  "column": {
+                    "name": "first_name",
+                    "value": "Chōjun"
+                  }
+                },
+                {
+                  "column": {
+                    "name": "last_name",
+                    "value": "Miyagi"
+                  }
+                },
+                {
+                  "column": {
+                    "name": "style",
+                    "value": "Karatedo (Goju Ryu)"
+                  }
+                },
+                {
+                  "column": {
+                    "name": "year_of_birth",
+                    "value": 1888
+                  }
+                },
+                {
+                  "column": {
+                    "name": "year_of_death",
+                    "value": 1953
+                  }
+                },
+                {
+                  "column": {
+                    "name": "region",
+                    "value": "Okinawa"
+                  }
+                }
+              ]
+            }
+          },
+          {
+            "insert": {
+              "tableName": "practitioner",
+              "columns": [
+                {
+                  "column": {
+                    "name": "first_name",
+                    "value": "Kenwa"
+                  }
+                },
+                {
+                  "column": {
+                    "name": "last_name",
+                    "value": "Mabuni"
+                  }
+                },
+                {
+                  "column": {
+                    "name": "style",
+                    "value": "Karatedo (Shito Ryu)"
+                  }
+                },
+                {
+                  "column": {
+                    "name": "year_of_birth",
+                    "value": 1889
+                  }
+                },
+                {
+                  "column": {
+                    "name": "year_of_death",
+                    "value": 1952
+                  }
+                },
+                {
+                  "column": {
+                    "name": "region",
+                    "value": "Okinawa"
+                  }
+                }
+              ]
+            }
+          },
+          {
+            "insert": {
+              "tableName": "practitioner",
+              "columns": [
+                {
+                  "column": {
+                    "name": "first_name",
+                    "value": "Sanda"
+                  }
+                },
+                {
+                  "column": {
+                    "name": "last_name",
+                    "value": "Kanagusuku"
+                  }
+                },
+                {
+                  "column": {
+                    "name": "style",
+                    "value": "Ufuchiku Ryukyu Kobudo"
+                  }
+                },
+                {
+                  "column": {
+                    "name": "year_of_birth",
+                    "value": 1841
+                  }
+                },
+                {
+                  "column": {
+                    "name": "year_of_death",
+                    "value": 1921
+                  }
+                },
+                {
+                  "column": {
+                    "name": "region",
+                    "value": "Okinawa"
+                  }
+                }
+              ]
+            }
+          },
+          {
+            "insert": {
+              "tableName": "practitioner",
+              "columns": [
+                {
+                  "column": {
+                    "name": "first_name",
+                    "value": "Sanpo"
+                  }
+                },
+                {
+                  "column": {
+                    "name": "last_name",
+                    "value": "Toku"
+                  }
+                },
+                {
+                  "column": {
+                    "name": "style",
+                    "value": "Kodokan Judo"
+                  }
+                },
+                {
+                  "column": {
+                    "name": "year_of_birth",
+                    "value": 1887
+                  }
+                },
+                {
+                  "column": {
+                    "name": "year_of_death",
+                    "value": 1945
+                  }
+                },
+                {
+                  "column": {
+                    "name": "region",
+                    "value": "Okinawa/Japan"
+                  }
+                }
+              ]
+            }
+          },
+          {
+            "insert": {
+              "tableName": "practitioner",
+              "columns": [
+                {
+                  "column": {
+                    "name": "first_name",
+                    "value": "Minoru"
+                  }
+                },
+                {
+                  "column": {
+                    "name": "last_name",
+                    "value": "Mochizuki"
+                  }
+                },
+                {
+                  "column": {
+                    "name": "style",
+                    "value": "Aikido - Kodokan"
+                  }
+                },
+                {
+                  "column": {
+                    "name": "year_of_birth",
+                    "value": 1907
+                  }
+                },
+                {
+                  "column": {
+                    "name": "year_of_death",
+                    "value": 2003
+                  }
+                },
+                {
+                  "column": {
+                    "name": "region",
+                    "value": "Manchuria/Japan"
+                  }
+                }
+              ]
+            }
+          },
+          {
+            "insert": {
+              "tableName": "practitioner",
+              "columns": [
+                {
+                  "column": {
+                    "name": "first_name",
+                    "value": "Kangren"
+                  }
+                },
+                {
+                  "column": {
+                    "name": "last_name",
+                    "value": "Wang"
+                  }
+                },
+                {
+                  "column": {
+                    "name": "style",
+                    "value": "Bajiquan"
+                  }
+                },
+                {
+                  "column": {
+                    "name": "region",
+                    "value": "Manchuria"
+                  }
+                }
+              ]
+            }
+          },
+          {
+            "insert": {
+              "tableName": "practitioner",
+              "columns": [
+                {
+                  "column": {
+                    "name": "first_name",
+                    "value": "Kōri"
+                  }
+                },
+                {
+                  "column": {
+                    "name": "last_name",
+                    "value": "Hisataka"
+                  }
+                },
+                {
+                  "column": {
+                    "name": "style",
+                    "value": "Shorinjiryu Kenkokan Karate"
+                  }
+                },
+                {
+                  "column": {
+                    "name": "region",
+                    "value": "Okinawa/Japan"
+                  }
+                },
+                {
+                  "column": {
+                    "name": "year_of_birth",
+                    "value": 1907
+                  }
+                },
+                {
+                  "column": {
+                    "name": "year_of_death",
+                    "value": 1988
+                  }
+                }
+              ]
+            }
+          }
+        ]
+      }
+    }
+  ]
+}

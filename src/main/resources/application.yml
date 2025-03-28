@@ -1,0 +1,31 @@
+# Database
+spring:
+  jpa:
+    hibernate.ddl-auto: update
+    show-sql: false
+    properties:
+      hibernate:
+        generate_statistics: false
+        order_inserts: true
+        order_updates: true
+        jdbc:
+          batch_size: 100
+          batch_versioned_data: true
+        dialect: org.hibernate.dialect.MySQLDialect
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://mymysqlservertrial17.mysql.database.azure.com:3306/karate_history?sslMode=REQUIRED&serverTimezone=UTC&characterEncoding=utf8mb4
+    username: myadmin@mymysqlservertrial17
+    password: MyStrongPassword123!
+  main:
+    allow-bean-definition-overriding: true
+    allow-circular-references: true
+  jackson:
+    serialization:
+      fail_on_empty_beans: false
+  servlet:
+    multipart:
+      max-file-size: 5MB
+      max-request-size: 5MB
+  liquibase:
+    change-log: classpath:/db/changelog/db.changelog-master.json

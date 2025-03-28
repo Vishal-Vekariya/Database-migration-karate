@@ -1,0 +1,40 @@
+{
+  "databaseChangeLog": [
+    {
+      "changeSet": {
+        "id": 4,
+        "author": "danyu.wan",
+        "changes": [
+          {
+            "dropColumn": {
+              "columnName": "training_start_year",
+              "tableName": "practitioner"
+            }
+          },
+          {
+            "dropColumn": {
+              "columnName": "training_end_year",
+              "tableName": "practitioner"
+            }
+          },
+          {
+            "renameColumn": {
+              "tableName": "practitioner",
+              "oldColumnName": "story",
+              "newColumnName": "biography",
+              "columnDataType": "TEXT"
+            }
+          },
+          {
+            "renameColumn": {
+              "tableName": "practitioner",
+              "oldColumnName": "image",
+              "newColumnName": "image_url",
+              "columnDataType": "VARCHAR(500)"
+            }
+          }
+        ]
+      }
+    }
+  ]
+}

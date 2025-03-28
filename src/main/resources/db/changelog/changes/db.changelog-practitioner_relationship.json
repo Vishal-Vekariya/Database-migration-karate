@@ -1,0 +1,378 @@
+{
+  "databaseChangeLog": [
+    {
+      "changeSet": {
+        "id": 3,
+        "author": "danyu.wan",
+        "changes": [
+          {
+            "createTable": {
+              "tableName": "practitioner_relationship",
+              "columns": [
+                {
+                  "column": {
+                    "name": "id",
+                    "type": "BIGINT",
+                    "autoIncrement": true,
+                    "constraints": {
+                      "primaryKey": true,
+                      "nullable": false
+                    }
+                  }
+                },
+                {
+                  "column": {
+                    "name": "practitioner_id",
+                    "type": "BIGINT",
+                    "constraints": {
+                      "foreignKeyName": "fk_relationship_practitioner",
+                      "references": "practitioner(id)",
+                      "nullable": false
+                    }
+                  }
+                },
+                {
+                  "column": {
+                    "name": "parent_id",
+                    "type": "BIGINT",
+                    "constraints": {
+                      "foreignKeyName": "fk_relationship_parent",
+                      "references": "practitioner(id)"
+                    }
+                  }
+                }
+              ]
+            }
+          }
+        ]
+      }
+    },
+    {
+      "changeSet": {
+        "id": 4,
+        "author": "danyu.wan",
+        "changes": [
+          {
+            "insert": {
+              "tableName": "practitioner_relationship",
+              "columns": [
+                {
+                  "column": {
+                    "name": "practitioner_id",
+                    "value": 1
+                  }
+                }
+              ]
+            }
+          },
+          {
+            "insert": {
+              "tableName": "practitioner_relationship",
+              "columns": [
+                {
+                  "column": {
+                    "name": "practitioner_id",
+                    "value": 2
+                  }
+                }
+              ]
+            }
+          },
+          {
+            "insert": {
+              "tableName": "practitioner_relationship",
+              "columns": [
+                {
+                  "column": {
+                    "name": "practitioner_id",
+                    "value": 3
+                  }
+                }
+              ]
+            }
+          },
+          {
+            "insert": {
+              "tableName": "practitioner_relationship",
+              "columns": [
+                {
+                  "column": {
+                    "name": "practitioner_id",
+                    "value": 4
+                  }
+                }
+              ]
+            }
+          },
+          {
+            "insert": {
+              "tableName": "practitioner_relationship",
+              "columns": [
+                {
+                  "column": {
+                    "name": "practitioner_id",
+                    "value": 5
+                  }
+                },
+                {
+                  "column": {
+                    "name": "parent_id",
+                    "value": 4
+                  }
+                }
+              ]
+            }
+          },
+          {
+            "insert": {
+              "tableName": "practitioner_relationship",
+              "columns": [
+                {
+                  "column": {
+                    "name": "practitioner_id",
+                    "value": 6
+                  }
+                },
+                {
+                  "column": {
+                    "name": "parent_id",
+                    "value": 4
+                  }
+                }
+              ]
+            }
+          },
+          {
+            "insert": {
+              "tableName": "practitioner_relationship",
+              "columns": [
+                {
+                  "column": {
+                    "name": "practitioner_id",
+                    "value": 7
+                  }
+                }
+              ]
+            }
+          },
+          {
+            "insert": {
+              "tableName": "practitioner_relationship",
+              "columns": [
+                {
+                  "column": {
+                    "name": "practitioner_id",
+                    "value": 8
+                  }
+                }
+              ]
+            }
+          },
+          {
+            "insert": {
+              "tableName": "practitioner_relationship",
+              "columns": [
+                {
+                  "column": {
+                    "name": "practitioner_id",
+                    "value": 9
+                  }
+                },
+                {
+                  "column": {
+                    "name": "parent_id",
+                    "value": 8
+                  }
+                }
+              ]
+            }
+          },
+          {
+            "insert": {
+              "tableName": "practitioner_relationship",
+              "columns": [
+                {
+                  "column": {
+                    "name": "practitioner_id",
+                    "value": 10
+                  }
+                }
+              ]
+            }
+          },
+          {
+            "insert": {
+              "tableName": "practitioner_relationship",
+              "columns": [
+                {
+                  "column": {
+                    "name": "practitioner_id",
+                    "value": 11
+                  }
+                },
+                {
+                  "column": {
+                    "name": "parent_id",
+                    "value": 1
+                  }
+                }
+              ]
+            }
+          },
+          {
+            "insert": {
+              "tableName": "practitioner_relationship",
+              "columns": [
+                {
+                  "column": {
+                    "name": "practitioner_id",
+                    "value": 11
+                  }
+                },
+                {
+                  "column": {
+                    "name": "parent_id",
+                    "value": 2
+                  }
+                }
+              ]
+            }
+          },
+          {
+            "insert": {
+              "tableName": "practitioner_relationship",
+              "columns": [
+                {
+                  "column": {
+                    "name": "practitioner_id",
+                    "value": 11
+                  }
+                },
+                {
+                  "column": {
+                    "name": "parent_id",
+                    "value": 4
+                  }
+                }
+              ]
+            }
+          },
+          {
+            "insert": {
+              "tableName": "practitioner_relationship",
+              "columns": [
+                {
+                  "column": {
+                    "name": "practitioner_id",
+                    "value": 11
+                  }
+                },
+                {
+                  "column": {
+                    "name": "parent_id",
+                    "value": 5
+                  }
+                }
+              ]
+            }
+          },
+          {
+            "insert": {
+              "tableName": "practitioner_relationship",
+              "columns": [
+                {
+                  "column": {
+                    "name": "practitioner_id",
+                    "value": 11
+                  }
+                },
+                {
+                  "column": {
+                    "name": "parent_id",
+                    "value": 6
+                  }
+                }
+              ]
+            }
+          },
+          {
+            "insert": {
+              "tableName": "practitioner_relationship",
+              "columns": [
+                {
+                  "column": {
+                    "name": "practitioner_id",
+                    "value": 11
+                  }
+                },
+                {
+                  "column": {
+                    "name": "parent_id",
+                    "value": 7
+                  }
+                }
+              ]
+            }
+          },
+          {
+            "insert": {
+              "tableName": "practitioner_relationship",
+              "columns": [
+                {
+                  "column": {
+                    "name": "practitioner_id",
+                    "value": 11
+                  }
+                },
+                {
+                  "column": {
+                    "name": "parent_id",
+                    "value": 8
+                  }
+                }
+              ]
+            }
+          },
+          {
+            "insert": {
+              "tableName": "practitioner_relationship",
+              "columns": [
+                {
+                  "column": {
+                    "name": "practitioner_id",
+                    "value": 11
+                  }
+                },
+                {
+                  "column": {
+                    "name": "parent_id",
+                    "value": 9
+                  }
+                }
+              ]
+            }
+          },
+          {
+            "insert": {
+              "tableName": "practitioner_relationship",
+              "columns": [
+                {
+                  "column": {
+                    "name": "practitioner_id",
+                    "value": 11
+                  }
+                },
+                {
+                  "column": {
+                    "name": "parent_id",
+                    "value": 10
+                  }
+                }
+              ]
+            }
+          }
+        ]
+      }
+    }
+  ]
+}

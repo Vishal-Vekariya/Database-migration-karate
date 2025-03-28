@@ -1,0 +1,26 @@
+{
+  "databaseChangeLog": [
+    {
+      "changeSet": {
+        "id": 5,
+        "author": "danyu.wan",
+        "changes": [
+          {
+            "modifyDataType": {
+              "columnName": "biography",
+              "tableName": "practitioner",
+              "newDataType": "TEXT"
+            }
+          },
+          {
+            "modifyDataType": {
+              "columnName": "image_url",
+              "tableName": "practitioner",
+              "newDataType": "VARCHAR(500)"
+            }
+          }
+        ]
+      }
+    }
+  ]
+}
