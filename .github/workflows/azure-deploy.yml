@@ -3,7 +3,7 @@ name: Deploy Spring Boot to Azure App Service
 on:
   push:
     branches:
-      - main  # Change if you use a different branch
+      - main 
 
 jobs:
   build:
