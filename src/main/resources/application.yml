@@ -14,9 +14,9 @@ spring:
         dialect: org.hibernate.dialect.MySQLDialect
   datasource:
     driver-class-name: com.mysql.cj.jdbc.Driver
-    url: jdbc:mysql://mymysqlservertrial17.mysql.database.azure.com:3306/karate_history?sslMode=REQUIRED&serverTimezone=UTC&characterEncoding=utf8mb4
-    username: myadmin@mymysqlservertrial17
-    password: MyStrongPassword123!
+    url: jdbc:mysql://karatehistorymysql.mysql.database.azure.com:3306/karate_history?sslMode=REQUIRED&serverTimezone=UTC
+    username: karate
+    password: KaratePassword123!
   main:
     allow-bean-definition-overriding: true
     allow-circular-references: true
